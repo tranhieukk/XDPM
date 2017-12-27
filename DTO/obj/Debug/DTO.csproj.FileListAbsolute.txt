@@ -1,0 +1,5 @@
+H:\XDPM\QuanLyDiem\QuanLyDiem\DTO\bin\Debug\DTO.dll
+H:\XDPM\QuanLyDiem\QuanLyDiem\DTO\bin\Debug\DTO.pdb
+H:\XDPM\QuanLyDiem\QuanLyDiem\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+H:\XDPM\QuanLyDiem\QuanLyDiem\DTO\obj\Debug\DTO.dll
+H:\XDPM\QuanLyDiem\QuanLyDiem\DTO\obj\Debug\DTO.pdb
