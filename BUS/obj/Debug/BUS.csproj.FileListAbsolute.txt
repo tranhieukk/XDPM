@@ -18,3 +18,13 @@ H:\XDPM\A\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 H:\XDPM\A\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 H:\XDPM\A\BUS\obj\Debug\BUS.dll
 H:\XDPM\A\BUS\obj\Debug\BUS.pdb
+H:\Git\XDPM\BUS\bin\Debug\BUS.dll
+H:\Git\XDPM\BUS\bin\Debug\BUS.pdb
+H:\Git\XDPM\BUS\bin\Debug\DAL.dll
+H:\Git\XDPM\BUS\bin\Debug\DTO.dll
+H:\Git\XDPM\BUS\bin\Debug\DAL.pdb
+H:\Git\XDPM\BUS\bin\Debug\DTO.pdb
+H:\Git\XDPM\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+H:\Git\XDPM\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+H:\Git\XDPM\BUS\obj\Debug\BUS.dll
+H:\Git\XDPM\BUS\obj\Debug\BUS.pdb

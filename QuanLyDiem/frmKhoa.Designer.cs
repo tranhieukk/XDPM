@@ -39,21 +39,18 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.MaKhoa = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.TenKhoa = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txbMaKhoa = new DevExpress.XtraEditors.TextEdit();
+            this.txbKhoa = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.flpKhoas = new System.Windows.Forms.FlowLayoutPanel();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btnAddLogo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbMaKhoa.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbKhoa.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -125,63 +122,32 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(692, 40);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barDockControlTop.Size = new System.Drawing.Size(764, 32);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 393);
-            this.barDockControlBottom.Size = new System.Drawing.Size(692, 0);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 515);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barDockControlBottom.Size = new System.Drawing.Size(764, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 40);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 353);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 32);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 483);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(692, 40);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 353);
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(13, 161);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.MenuManager = this.barManager1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(667, 200);
-            this.gridControl1.TabIndex = 5;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.MaKhoa,
-            this.TenKhoa});
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            // 
-            // MaKhoa
-            // 
-            this.MaKhoa.Caption = "Mã Khoa";
-            this.MaKhoa.FieldName = "MaKhoa";
-            this.MaKhoa.Name = "MaKhoa";
-            this.MaKhoa.Visible = true;
-            this.MaKhoa.VisibleIndex = 0;
-            // 
-            // TenKhoa
-            // 
-            this.TenKhoa.Caption = "Tên Khoa";
-            this.TenKhoa.FieldName = "TenKhoa";
-            this.TenKhoa.Name = "TenKhoa";
-            this.TenKhoa.Visible = true;
-            this.TenKhoa.VisibleIndex = 1;
+            this.barDockControlRight.Location = new System.Drawing.Point(764, 32);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 483);
             // 
             // tableLayoutPanel1
             // 
@@ -189,79 +155,106 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.991F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.009F));
             this.tableLayoutPanel1.Controls.Add(this.labelControl2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textEdit1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textEdit2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txbMaKhoa, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txbKhoa, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.labelControl1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(13, 55);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 45);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(667, 100);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(572, 81);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl2.Location = new System.Drawing.Point(3, 53);
+            this.labelControl2.Location = new System.Drawing.Point(3, 42);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(73, 22);
+            this.labelControl2.Size = new System.Drawing.Size(58, 19);
             this.labelControl2.TabIndex = 3;
             this.labelControl2.Text = "Tên khoa";
             // 
-            // textEdit1
+            // txbMaKhoa
             // 
-            this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit1.Location = new System.Drawing.Point(123, 3);
-            this.textEdit1.MenuManager = this.barManager1;
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(541, 28);
-            this.textEdit1.TabIndex = 0;
+            this.txbMaKhoa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txbMaKhoa.Location = new System.Drawing.Point(105, 2);
+            this.txbMaKhoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txbMaKhoa.MenuManager = this.barManager1;
+            this.txbMaKhoa.Name = "txbMaKhoa";
+            this.txbMaKhoa.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbMaKhoa.Properties.Appearance.Options.UseFont = true;
+            this.txbMaKhoa.Size = new System.Drawing.Size(464, 26);
+            this.txbMaKhoa.TabIndex = 0;
             // 
-            // textEdit2
+            // txbKhoa
             // 
-            this.textEdit2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textEdit2.Location = new System.Drawing.Point(123, 53);
-            this.textEdit2.MenuManager = this.barManager1;
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Size = new System.Drawing.Size(541, 28);
-            this.textEdit2.TabIndex = 1;
+            this.txbKhoa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txbKhoa.Location = new System.Drawing.Point(105, 42);
+            this.txbKhoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txbKhoa.MenuManager = this.barManager1;
+            this.txbKhoa.Name = "txbKhoa";
+            this.txbKhoa.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbKhoa.Properties.Appearance.Options.UseFont = true;
+            this.txbKhoa.Size = new System.Drawing.Size(464, 26);
+            this.txbKhoa.TabIndex = 1;
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl1.Location = new System.Drawing.Point(3, 3);
+            this.labelControl1.Location = new System.Drawing.Point(3, 2);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(69, 22);
+            this.labelControl1.Size = new System.Drawing.Size(56, 19);
             this.labelControl1.TabIndex = 2;
             this.labelControl1.Text = "Mã khoa";
             // 
+            // flpKhoas
+            // 
+            this.flpKhoas.AutoScroll = true;
+            this.flpKhoas.Location = new System.Drawing.Point(25, 148);
+            this.flpKhoas.Name = "flpKhoas";
+            this.flpKhoas.Size = new System.Drawing.Size(702, 355);
+            this.flpKhoas.TabIndex = 11;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // btnAddLogo
+            // 
+            this.btnAddLogo.Location = new System.Drawing.Point(589, 45);
+            this.btnAddLogo.Name = "btnAddLogo";
+            this.btnAddLogo.Size = new System.Drawing.Size(75, 23);
+            this.btnAddLogo.TabIndex = 21;
+            this.btnAddLogo.Text = "Thêm logo";
+            this.btnAddLogo.UseVisualStyleBackColor = true;
+            this.btnAddLogo.Click += new System.EventHandler(this.btnAddLogo_Click);
+            // 
             // frmKhoa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(692, 393);
+            this.ClientSize = new System.Drawing.Size(764, 515);
+            this.Controls.Add(this.btnAddLogo);
+            this.Controls.Add(this.flpKhoas);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmKhoa";
             this.Text = "Khoa";
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbMaKhoa.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txbKhoa.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,14 +272,13 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txbMaKhoa;
+        private DevExpress.XtraEditors.TextEdit txbKhoa;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraGrid.Columns.GridColumn MaKhoa;
-        private DevExpress.XtraGrid.Columns.GridColumn TenKhoa;
+        private System.Windows.Forms.FlowLayoutPanel flpKhoas;
+        private System.Windows.Forms.Button btnAddLogo;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

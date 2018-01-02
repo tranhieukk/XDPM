@@ -41,7 +41,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountDAO.cs" />
+    <Compile Include="ChuanHoa.cs" />
+    <Compile Include="ChuyenNganhDAO.cs" />
+    <Compile Include="HeDaoTaoDAO.cs" />
+    <Compile Include="KhoaDAO.cs" />
+    <Compile Include="KhoaHocDAO.cs" />
+    <Compile Include="LopDAO.cs" />
+    <Compile Include="MonHocDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinhVienDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

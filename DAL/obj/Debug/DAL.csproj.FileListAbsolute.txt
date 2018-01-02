@@ -14,3 +14,11 @@ H:\XDPM\A\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 H:\XDPM\A\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 H:\XDPM\A\DAL\obj\Debug\DAL.dll
 H:\XDPM\A\DAL\obj\Debug\DAL.pdb
+H:\Git\XDPM\DAL\bin\Debug\DAL.dll
+H:\Git\XDPM\DAL\bin\Debug\DAL.pdb
+H:\Git\XDPM\DAL\bin\Debug\DTO.dll
+H:\Git\XDPM\DAL\bin\Debug\DTO.pdb
+H:\Git\XDPM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+H:\Git\XDPM\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+H:\Git\XDPM\DAL\obj\Debug\DAL.dll
+H:\Git\XDPM\DAL\obj\Debug\DAL.pdb

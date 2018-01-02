@@ -40,8 +40,7 @@ namespace QuanLyDiem
         //Check if a form is opened already      
         private bool IsFormActived(Form form)
         {
-
-
+            
             bool IsOpenend = false;
             //If there is more than one form opened
             if (MdiChildren.Count() > 0)
@@ -54,8 +53,6 @@ namespace QuanLyDiem
                         MdiManager.Pages[item].MdiChild.Activate();
                         IsOpenend = true;
                     }
-
-
                 }
             }
             return IsOpenend;
@@ -69,16 +66,11 @@ namespace QuanLyDiem
                 Application.Exit();
             }
         }
-
-
-
+        
         private void btnLogIn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
            
         }
-
-        
-
         private void btnMonhoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmMonHoc frm = new frmMonHoc();

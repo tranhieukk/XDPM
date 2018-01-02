@@ -40,8 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChuyenNganh.cs" />
+    <Compile Include="HeDaoTao.cs" />
+    <Compile Include="Khoa.cs" />
+    <Compile Include="KhoaHoc.cs" />
+    <Compile Include="Lop.cs" />
+    <Compile Include="MonHoc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Account.cs" />
+    <Compile Include="SinhVien.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
