@@ -32,5 +32,20 @@ namespace BUS
             }
             return list;
         }
+        public int Insert(HeDaoTao hdt)
+        {
+            string query = "Exec addHeDaoTao @maHeDT , @tenHDT ";
+            return DataProvider.Instance.ExecuteNonQuery(query,new object[] {hdt.MaHe,hdt.TenHe })
+        }
+        public int Remove(HeDaoTao hdt)
+        {
+            string query = "Exec deleteHeDaoTao @maHeDT  ";
+            return DataProvider.Instance.ExecuteNonQuery(query, new object[] { hdt.MaHe });
+        }
+        public int Update(HeDaoTao hdt,string mahdtOld)
+        {
+            string query = "Exec updateHeDaoTao @maHDTOld , @maHeDT , @tenHDT ";
+            return DataProvider.Instance.ExecuteNonQuery(query, new object[] {mahdtOld, hdt.MaHe, hdt.TenHe })
+        }
     }
 }

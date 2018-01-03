@@ -362,3 +362,4 @@ H:\Git\XDPM\QuanLyDiem\bin\Debug\de\DevExpress.Xpf.Docking.v15.1.resources.dll
 H:\Git\XDPM\QuanLyDiem\bin\Debug\es\DevExpress.Xpf.Docking.v15.1.resources.dll
 H:\Git\XDPM\QuanLyDiem\bin\Debug\ja\DevExpress.Xpf.Docking.v15.1.resources.dll
 H:\Git\XDPM\QuanLyDiem\bin\Debug\ru\DevExpress.Xpf.Docking.v15.1.resources.dll
+H:\Git\XDPM\QuanLyDiem\obj\Debug\QuanLyDiem.frmHocKy.resources

@@ -65,11 +65,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDiemMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiemMonHoc.Designer.cs">
+      <DependentUpon>frmDiemMonHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGiangvien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmGiangvien.Designer.cs">
       <DependentUpon>frmGiangvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHocKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHocKy.Designer.cs">
+      <DependentUpon>frmHocKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHocLai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHocLai.Designer.cs">
+      <DependentUpon>frmHocLai.cs</DependentUpon>
     </Compile>
     <Compile Include="frmKhoa.cs">
       <SubType>Form</SubType>
@@ -107,6 +125,12 @@
     <Compile Include="frmSinhVien.Designer.cs">
       <DependentUpon>frmSinhVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThiLai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThiLai.Designer.cs">
+      <DependentUpon>frmThiLai.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmRegister.cs">
@@ -117,6 +141,9 @@
     </Compile>
     <EmbeddedResource Include="frmGiangvien.resx">
       <DependentUpon>frmGiangvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHocKy.resx">
+      <DependentUpon>frmHocKy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKhoa.resx">
       <DependentUpon>frmKhoa.cs</DependentUpon>

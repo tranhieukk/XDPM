@@ -36,17 +36,17 @@ namespace BUS
             }
             return dsChuyenNganh;
         }
-        public int addChuyenNganh(ChuyenNganh chuyenNganh)
+        public int Insert(ChuyenNganh chuyenNganh)
         {
             string query = " Exec USP_addChuyenNganh @MaNganh , @TenNganh , @MaKhoa ";
             return DataProvider.Instance.ExecuteNonQuery(query, new object[] { chuyenNganh.MaNganh, chuyenNganh.TenNganh, chuyenNganh.MaKhoa });
         }
-        public int removeChuyenNganh(ChuyenNganh chuyenNganh)
+        public int Remove(ChuyenNganh chuyenNganh)
         {
             string query = " Exec USP_deleteChuyenNganh @MaNganh ";
             return DataProvider.Instance.ExecuteNonQuery(query, new object[] { chuyenNganh.MaNganh });
         }
-        public int editChuyenNganh(ChuyenNganh chuyenNganh,string maNganhHientai)
+        public int Update(ChuyenNganh chuyenNganh,string maNganhHientai)
         {
             string query = " Exec USP_editChuyenNganh @maNganhHientai , @MaNganh , @TenNganh , @MaKhoa ";
             return DataProvider.Instance.ExecuteNonQuery(query, new object[] {maNganhHientai, chuyenNganh.MaNganh, chuyenNganh.TenNganh, chuyenNganh.MaKhoa });

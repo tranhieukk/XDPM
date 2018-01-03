@@ -15,6 +15,8 @@ namespace QuanLyDiem
         public frmMenu(Account account)
         {
             InitializeComponent();
+            btnRole.Enabled = false;
+           
         }
 
         
